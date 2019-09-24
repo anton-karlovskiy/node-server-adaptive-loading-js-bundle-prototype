@@ -1,6 +1,7 @@
 {
-  "name": "node-server-adaptive-loading",
+  "name": "node-server-adaptive-loading-js-bundle",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
@@ -8,16 +9,17 @@
     "express": "^4.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-magnifier": "^3.0.3",
     "react-scripts": "3.1.1"
   },
   "scripts": {
-    "start-dev": "react-scripts start",
+    "start-fe-dev": "react-scripts start",
     "start": "node server.js",
-    "start-node": "nodemon server.js",
+    "start-be-dev": "nodemon server.js",
     "build": "react-scripts build && cd functions && rm -rf build && mkdir build && cd .. && cp -r build/* ./functions/build",
     "deploy-functions": "firebase deploy",
-    "log-functions": "cd functions && firebase functions:log",
-    "deploy-app": "cd functions && firebase deploy",
+    "log-functions": "cd functions && npm run logs",
+    "deploy-host": "cd functions && firebase deploy",
     "serve": "cd functions && firebase serve",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

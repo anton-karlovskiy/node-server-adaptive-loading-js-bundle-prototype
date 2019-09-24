@@ -1,11 +1,24 @@
+const functions = require('firebase-functions');
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+//  response.send('Hello from Firebase!');
+// });
 
 const express = require('express');
+// const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
 
 const app = express();
 app.disable('x-powered-by');
 app.use(cors());
+
+// check requests
+// const morgan = require('morgan');
+// app.use(morgan('combined'));
 
 app.get('/ping', (req, res) => {
   res.send('pong');
@@ -14,12 +27,10 @@ app.get('/ping', (req, res) => {
 app.get('/network-memory-considerate-js-loading', (req, res) => {
   const ect = req.headers.ect;
   const deviceMemory = req.headers['device-memory'];
-  const MEMORY_LIMIT = 4; // Threshold is 4GB RAM
-  const ECT_LIMIT = '4g';
   console.log('[server network-memory-considerate-js-loading request] ECT, Device Memory => ', ect, deviceMemory);
   
   // TODO: As this is a demo, I think it should be easy enough to change these numbers as needed in the future. -> dotenv
-  const experienceType = ect === ECT_LIMIT && deviceMemory > MEMORY_LIMIT ? 'light' : 'light';
+  const experienceType = ect === '4g' && deviceMemory > 4 ? 'heavy' : 'light';
   res.json({experienceType});
 });
 
@@ -38,3 +49,5 @@ app.listen(
     console.log(`Frontend start on http://localhost:5000`);
   }
 );
+
+exports.app = functions.https.onRequest(app);

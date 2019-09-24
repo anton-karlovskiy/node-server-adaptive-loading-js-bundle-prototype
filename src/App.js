@@ -1,16 +1,15 @@
 
 import React from 'react';
 
-import ModelViewer from './components/ModelViewer';
+import AdaptiveViewer from './components/AdaptiveViewer';
+import kitchenImage from './assets/images/kitchen.jpg';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="root-frame">
-          <ModelViewer model='78f50fd5859746a6bdb611c867dd0229' />
-        </div>
+        <AdaptiveViewer imageUrl={kitchenImage} />
       </header>
     </div>
   );
