@@ -20,7 +20,7 @@ app.get('/network-memory-considerate-js-loading', (req, res) => {
   console.log('[server network-memory-considerate-js-loading request] ECT, Device Memory => ', ect, deviceMemory);
   
   // TODO: As this is a demo, I think it should be easy enough to change these numbers as needed in the future. -> dotenv
-  const experienceType = ect === ECT_LIMIT && deviceMemory > MEMORY_LIMIT ? 'light' : 'light';
+  const experienceType = ect === ECT_LIMIT && deviceMemory > MEMORY_LIMIT ? 'heavy' : 'light';
   res.json({experienceType});
 });
 

@@ -6,7 +6,7 @@ Deployed [Here](https://server-adaptive-loading-hybrid.herokuapp.com/)
 
 ## Glitch Source
 * [Link to Glitch App](https://anton-karlovskiy-node-server-adaptive-loading-js-bundle.glitch.me/)
-* [Link to Project on Glitch](https://glitch.com/~node-server-adaptive-loading-js-bundle/)
+* [Link to Project on Glitch](https://glitch.com/~anton-karlovskiy-node-server-adaptive-loading-js-bundle/)
 
 ## Installation
 ```
