@@ -5,15 +5,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Deployed [Here](https://server-adaptive-loading-hybrid.herokuapp.com/)
 
 ## Glitch Source
-* [Link to Glitch App](https://anton-karlovskiy-node-server-adaptive-loading-ect-memory.glitch.me/)
-* [Link to Project on Glitch](https://glitch.com/~node-server-adaptive-loading-ect-memory/)
+* [Link to Glitch App](https://anton-karlovskiy-node-server-adaptive-loading-js-bundle.glitch.me/)
+* [Link to Project on Glitch](https://glitch.com/~node-server-adaptive-loading-js-bundle/)
 
 ## Installation
 ```
-git clone https://github.com/anton-karlovskiy/node-server-adaptive-loading-ect-memory.git
+git clone https://github.com/anton-karlovskiy/node-server-adaptive-loading-js-bundle.git
 npm install
 npm run build
-npm run start-node
+npm run start
 ```
 
 ## Deployment(Firebase Functions)
@@ -24,5 +24,5 @@ npm run deploy-functions
 
 ### deploy app
 ```
-npm run deploy-app
+npm run deploy-host
 ```
