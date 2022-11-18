@@ -10,7 +10,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-magnifier": "^3.0.3",
-    "react-scripts": "3.1.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start-fe-dev": "react-scripts start",
