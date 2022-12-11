@@ -6,7 +6,7 @@
   "proxy": "http://localhost:5000",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-magnifier": "^3.0.3",
